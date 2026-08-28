@@ -484,10 +484,6 @@ Beyond the lifecycle stages, these "undercurrents" support everything:
 
 ---
 
-**✅ You are now ready to move to Part 2: [Data Architecture 101 Complete Guide](./Data_Architecture_101_Complete_Guide.md)**
-
----
-
 *End of Part 1: Fundamentals of Data Engineering*
 
 ---

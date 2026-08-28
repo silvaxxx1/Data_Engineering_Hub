@@ -544,10 +544,5 @@ You don't have to choose just one cloud provider:
 └─────────────────────────────────────────────────────────────┘
 ```
 
----
-
-**✅ You have completed Part 4: Cloud for Data Engineering**
-
----
 
 *End of Part 4: Cloud for Data Engineering*

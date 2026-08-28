@@ -471,16 +471,5 @@ Let's bring everything together with a real-world example.
 
 ---
 
-**✅ You have completed Part 2: Data Architecture 101**
-
-Proceed to the next sections:
-- Data Warehousing & Dimensional Modeling
-- Slowly Changing Dimensions (SCD)
-- Data Lakes vs. Data Warehouses
-- Big Data Landscape
-- Cloud Data Engineering (AWS, GCP, Azure)
-- Modern Data Stack Tools
-
----
 
 *End of Part 2: Data Architecture 101*

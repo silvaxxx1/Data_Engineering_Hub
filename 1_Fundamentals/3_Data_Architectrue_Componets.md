@@ -484,10 +484,4 @@ A **data lake** is a storage repository that holds a vast amount of raw data in 
 | **Data Mart** | Subset of data warehouse | Department-specific |
 | **Data Lake** | Raw data repository | Any data type, schema-on-read |
 
----
-
-**✅ You have completed Part 3: Data Warehousing & Dimensional Modeling**
-
----
-
 *End of Part 3: Data Warehousing & Dimensional Modeling*
