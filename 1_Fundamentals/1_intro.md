@@ -58,7 +58,7 @@ Every modern business—whether Amazon, Netflix, or a local startup—shares com
 
 The lifecycle is a structured approach that transforms raw data into business value. Each stage serves a specific purpose.
 
-![alt text](image.png)
+![Data Engineering Lifecycle](./assets/image.png)
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -162,7 +162,7 @@ DELETE  → Remove data
 
 Data modeling is the process of creating a visual representation of data structures, entities, attributes, and their relationships. It ensures data is organized for efficient querying and analysis.
 
-![alt text](image-1.png)
+![Data Modeling Process](./assets/image-1.png)
 
 ### The Data Modeling Process
 
@@ -283,7 +283,7 @@ The goal of data modeling is to create a structure that **accurately represents 
 
 The distinction goes beyond the query language—it's about data structure and use cases.
 
-![alt text](image-2.png)
+![SQL vs NoSQL Comparison](./assets/image-2.png)
 
 ### Side-by-Side Comparison
 
@@ -372,7 +372,7 @@ COLUMN-ORIENTED (OLAP):
 
 ETL (Extract, Transform, Load) is the standard process for moving data from OLTP systems to OLAP environments.
 
-![alt text](image-3.png)
+![ETL Process](./assets/image-3.png)
 
 ```
 ┌─────────────┐     ┌─────────────────┐     ┌─────────────┐
@@ -484,7 +484,7 @@ Beyond the lifecycle stages, these "undercurrents" support everything:
 
 ---
 
-**✅ You are now ready to move to Part 2: [Data Architecture 101 Complete Guide]**
+**✅ You are now ready to move to Part 2: [Data Architecture 101 Complete Guide](./Data_Architecture_101_Complete_Guide.md)**
 
 ---
 
