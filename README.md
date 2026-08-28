@@ -20,12 +20,16 @@ This repository contains my complete notes and guides on Data Engineering. It st
 
 ## 📚 Current Content
 
-### Part 1: Fundamentals of Data Engineering
+### Part 1: Fundamentals of Data Engineering ✅
 
 | Module | Description |
 |:---|:---|
 | **1_intro.md** | Core concepts: Data Engineering lifecycle, data modeling, SQL vs NoSQL, OLTP vs OLAP, ETL process, undercurrents |
 | **2_Data_Architecture_101.md** | Data architecture principles, operational vs technical architecture, e-commerce case study |
+| **3_Data_Architecture_Components.md** | Data Warehousing, ETL vs ELT, dimensional modeling, star/snowflake schema, SCD types, data marts, data lake, data lake vs warehouse |
+| **4_Cloud_Computing.md** | Cloud service models (IaaS, PaaS, SaaS), AWS data services, GCP vs Azure, Dream11 case study, modern data stack |
+| **5_Skills_Tooling.md** | Python, SQL, Linux, Snowflake, Apache Spark, Kafka, Airflow, modern data stack, data security, file formats |
+| **Bonus_DE_4_ML.md** | Data Engineering for Machine Learning |
 
 ---
 
@@ -33,39 +37,52 @@ This repository contains my complete notes and guides on Data Engineering. It st
 
 ```
 Data_Eng/
-├── 1_Fundamentasl/
+├── 1_Fundamentals/
 │   ├── 1_intro.md
 │   ├── 2_Data_Architecture_101.md
-│   └── assets/
-
-├── main.py
-├── pyproject.toml
-└── README.md
+│   ├── 3_Data_Architecture_Components.md
+│   ├── 4_Cloud_Computing.md
+│   ├── 5_Skills_Tooling.md
+│   ├── Bonus_DE_4_ML.md
+│   └── assets/                    # All diagrams and images
+├── main.py                        # Python entry point
+├── pyproject.toml                 # Project configuration
+└── README.md                      # This file
 ```
 
 ---
 
 ## 🎯 Who Is This For?
 
-- Aspiring Data Engineers
-- Data Analysts wanting to understand the backend
-- Data Scientists needing data pipeline knowledge
-- Anyone interested in data engineering
+- **Aspiring Data Engineers** – Complete learning path from fundamentals
+- **Data Analysts** – Understand the backend behind dashboards
+- **Data Scientists** – Learn how data gets prepared for modeling
+- **Software Engineers** – Transition into data engineering
+- **Anyone interested** in data engineering
 
 ---
 
 ## 🚀 How to Use
 
-1. Start with `1_Fundamentasl/1_intro.md`
-2. Continue with `1_Fundamentasl/2_Data_Architecture_101.md`
-3. Follow along with the diagrams in the `assets/` folder
+1. Start with `1_Fundamentals/1_intro.md` – Build your foundation
+2. Continue with `1_Fundamentals/2_Data_Architecture_101.md` – Understand system design
+3. Explore `3_Data_Architecture_Components.md` – Deep dive into warehousing
+4. Learn cloud with `4_Cloud_Computing.md` – AWS, GCP, Azure
+5. Check `5_Skills_Tooling.md` – Required tools and technologies
+6. Review `Bonus_DE_4_ML.md` – Data engineering for ML
+
+Follow along with the diagrams in the `assets/` folder.
 
 ---
 
 ## 📖 Recommended Reading
 
-- **Fundamentals of Data Engineering** – Joe Reis & Matt Housley
-- **Designing Data-Intensive Applications** – Martin Kleppmann
+| Book | Author |
+|:---|:---|
+| **Fundamentals of Data Engineering** | Joe Reis & Matt Housley |
+| **Designing Data-Intensive Applications** | Martin Kleppmann |
+| **The Data Warehouse Toolkit** | Ralph Kimball |
+| **Streaming Systems** | Tyler Akidau |
 
 ---
 
@@ -73,8 +90,7 @@ Data_Eng/
 
 | Status | Module |
 |:---:|:---|
-| ✅ | Fundamentals of Data Engineering |
-| ✅ | Data Architecture 101 |
+| ✅ | Fundamentals of Data Engineering (Complete) |
 
 *More content will be added over time.*
 
@@ -85,3 +101,11 @@ Data_Eng/
 MIT License
 
 ---
+
+<div align="center">
+
+**⭐ Star this repo to stay updated with new content!**
+
+*Built with ❤️ for the data engineering community*
+
+</div>
