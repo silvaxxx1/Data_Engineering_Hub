@@ -14,43 +14,52 @@
 
 ## 📖 About This Repository
 
-This is my **personal learning journal** for Data Engineering. I'm documenting everything I learn as I go—from fundamentals to advanced concepts. This is my way of solidifying knowledge and creating a reference I can come back to.
+This is my **personal learning journal** for Data Engineering. I'm documenting everything I learn as I go — from fundamentals to advanced concepts. This is my way of solidifying knowledge and creating a reference I can come back to.
 
 **This is not a polished course or tutorial.** It's my raw, honest learning journey with all the notes, diagrams, and insights I've gathered along the way.
 
 ---
 
-## 📚 What I've Covered So Far
+## 🗺️ The Roadmap
 
-### Part 1: Fundamentals of Data Engineering ✅
+| # | Module | Focus | Status |
+|:--|:---|:---|:---|
+| 1 | **[Fundamentals](1_Fundamentals/)** | Broad DE survey | ✅ Done |
+| 2 | **[SQL Speedrun](2_SQL_Speedrun/)** | Full SQL surface, breadth-first | 🚧 In Progress |
+| 3 | Big Data Tools | Spark, Airflow, Kafka | ⏳ Planned |
+| 4 | Modern Data Stack | dbt, Snowflake | ⏳ Planned |
+| 5 | Production DE | CI/CD, monitoring, security | ⏳ Planned |
+| 6 | SQL Deep Dive | Optimization, indexing, MERGE, CDC | ⏳ Planned |
 
-| Module | What I Learned |
-|:---|:---|
-| **1_intro.md** | Data Engineering lifecycle, data modeling, SQL vs NoSQL, OLTP vs OLAP, ETL process, undercurrents |
-| **2_Data_Architecture_101.md** | Data architecture principles, operational vs technical architecture, e-commerce case study |
-| **3_Data_Architecture_Components.md** | Data Warehousing, ETL vs ELT, dimensional modeling, star/snowflake schema, SCD types, data marts, data lake, data lake vs warehouse |
-| **4_Cloud_Computing.md** | Cloud service models (IaaS, PaaS, SaaS), AWS data services, GCP vs Azure, Dream11 case study, modern data stack |
-| **5_Skills_Tooling.md** | Python, SQL, Linux, Snowflake, Apache Spark, Kafka, Airflow, modern data stack, data security, file formats |
-| **Bonus_DE_4_ML.md** | Data Engineering for Machine Learning |
+> Each module has its own `README.md` — open it for the full lesson list,
+> setup, dataset, and progress tracker.
 
 ---
 
-## 🗂️ How I Organize My Notes
+## 🗂️ Repo Structure
 
 ```
 Data_Eng/
-├── 1_Fundamentals/              # My foundation notes
-│   ├── 1_intro.md
-│   ├── 2_Data_Architecture_101.md
-│   ├── 3_Data_Architecture_Components.md
-│   ├── 4_Cloud_Computing.md
-│   ├── 5_Skills_Tooling.md
-│   ├── Bonus_DE_4_ML.md
-│   └── assets/                  # Diagrams and images I reference
-├── main.py                      # Code experiments
-├── pyproject.toml               # Project setup
-└── README.md                    # This file (my learning log)
+├── 1_Fundamentals/        → broad DE survey
+├── 2_SQL_Speedrun/        → SQL breadth (notes + flat sql/)
+├── 3_Big_Data_Tools/      → planned
+├── 4_Modern_Data_Stack/   → planned
+├── 5_Production_DE/       → planned
+├── 6_SQL_Deep_Dive/       → planned
+├── main.py
+├── pyproject.toml
+└── README.md
 ```
+
+---
+
+## 🧠 My Learning Principles
+
+1. **Breadth first, depth later** — speedruns cover the map, deep dives fill it in
+2. **Notes teach, SQL executes** — `.md` files explain; `.sql` files run
+3. **One concept per file** — every lesson is self-contained
+4. **Practice over theory** — run every query, break things, fix them
+5. **Write for future-me** — clear enough to skim a year from now
 
 ---
 
@@ -61,7 +70,6 @@ Data_Eng/
 - **To share** – Maybe someone else finds this useful too
 - **To track progress** – I can see how far I've come
 
-
 *I'll keep adding as I learn more.*
 
 ---
@@ -69,5 +77,3 @@ Data_Eng/
 ## 📄 License
 
 MIT License – Feel free to use these notes for your own learning!
-
----
