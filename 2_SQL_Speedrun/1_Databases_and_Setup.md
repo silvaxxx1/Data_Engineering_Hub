@@ -87,29 +87,131 @@ You need two things:
 You could use `psql` (command line) instead of DBeaver. A GUI makes
 exploration easier while learning.
 
-### Install PostgreSQL
+Pick **one** of the two install paths below — native or Docker.
 
-1. Download: https://www.postgresql.org/download/
-2. Run installer — accept defaults
-3. **Set a password** — remember it, you'll need it
-4. Leave port at `5432`
-5. Uncheck "Stack Builder" at the end — not needed
-6. Finish
+---
 
-### Install DBeaver
+### Option A — Native Install (Ubuntu)
 
-1. Download: https://dbeaver.io/download/
-2. Install with defaults
-3. Open it
+#### Install PostgreSQL
+
+```bash
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+```
+
+#### Set a password for the `postgres` user
+
+By default, Postgres uses peer authentication — no password. We'll set
+one so DBeaver can connect over TCP.
+
+```bash
+sudo -u postgres psql
+```
+
+Inside the `psql` prompt:
+
+```sql
+ALTER USER postgres WITH PASSWORD 'your_password_here';
+\q
+```
+
+Remember this password — DBeaver will ask for it.
+
+#### Verify it's running
+
+```bash
+sudo systemctl status postgresql
+# Should show: active (running)
+```
+
+#### Install DBeaver
+
+```bash
+sudo snap install dbeaver-ce
+```
+
+Or download the `.deb` from https://dbeaver.io/download/
+
+---
+
+### Option B — Docker
+
+If you'd rather not install Postgres system-wide, run it in a container.
+
+#### Install Docker (if not already installed)
+
+```bash
+sudo apt update
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker $USER
+# Log out and back in for the group change to take effect
+```
+
+#### Run PostgreSQL
+
+```bash
+docker run -d \
+  --name pg-ecommerce \
+  -e POSTGRES_PASSWORD=your_password_here \
+  -p 5432:5432 \
+  -v pg_data:/var/lib/postgresql/data \
+  postgres:16
+```
+
+What each flag does:
+
+| Flag | Meaning |
+|:---|:---|
+| `-d` | Run in background |
+| `--name pg-ecommerce` | Name the container |
+| `-e POSTGRES_PASSWORD=...` | Set the `postgres` password |
+| `-p 5432:5432` | Expose port 5432 on localhost |
+| `-v pg_data:...` | Persist data in a named volume |
+| `postgres:16` | Use PostgreSQL 16 image |
+
+#### Useful Docker commands
+
+```bash
+docker ps                     # list running containers
+docker logs pg-ecommerce      # view Postgres logs
+docker stop pg-ecommerce      # stop the container
+docker start pg-ecommerce     # start it again
+docker exec -it pg-ecommerce psql -U postgres   # open psql inside the container
+```
+
+#### Install DBeaver
+
+```bash
+sudo snap install dbeaver-ce
+```
+
+---
+
+### Other Operating Systems
+
+- **Windows:** https://www.postgresql.org/download/windows/
+- **macOS:** https://www.postgresql.org/download/macosx/
+- **Other Linux distros:** https://www.postgresql.org/download/linux/
+
+For DBeaver on any OS: https://dbeaver.io/download/
+
+---
 
 ### Connect DBeaver to PostgreSQL (first time only)
 
-1. Click **New Database Connection** (top-left)
-2. Choose **PostgreSQL** → Next
-3. Leave host/port/database defaults
-4. Check **"Show all databases"**
-5. Enter your PostgreSQL password
-6. Finish
+1. Open DBeaver
+2. Click **New Database Connection** (top-left)
+3. Choose **PostgreSQL** → Next
+4. Host: `localhost`, Port: `5432`, Database: `postgres`
+5. Username: `postgres`
+6. Password: the one you set above (native) or passed to Docker
+7. Check **"Show all databases"**
+8. Finish
 
 You should see the server in the left panel. Expand it to see databases.
 
