@@ -26,10 +26,12 @@ This is my **personal learning journal** for Data Engineering. I'm documenting e
 |:--|:---|:---|:---|
 | 1 | **[Fundamentals](1_Fundamentals/)** | Broad DE survey | ✅ Done |
 | 2 | **[SQL Speedrun](2_SQL_Speedrun/)** | Full SQL surface, breadth-first | 🚧 In Progress |
-| 3 | Big Data Tools | Spark, Airflow, Kafka | ⏳ Planned |
-| 4 | Modern Data Stack | dbt, Snowflake | ⏳ Planned |
-| 5 | Production DE | CI/CD, monitoring, security | ⏳ Planned |
-| 6 | SQL Deep Dive | Optimization, indexing, MERGE, CDC | ⏳ Planned |
+| 3 | **[Spark Deep Dive](3_Spark_Deep_Dive/)** | Distributed computing with PySpark | ⏳ Planned |
+| 4 | **Orchestration** | Airflow, scheduling, DAGs | ⏳ Planned |
+| 5 | **Streaming** | Kafka, event-driven pipelines | ⏳ Planned |
+| 6 | **[Modern Data Stack](6_Modern_Data_Stack/)** | dbt, Snowflake | ⏳ Planned |
+| 7 | **Production DE** | CI/CD, monitoring, security | ⏳ Planned |
+| 8 | **SQL Deep Dive** | Optimization, indexing, MERGE, CDC | ⏳ Planned |
 
 > Each module has its own `README.md` — open it for the full lesson list,
 > setup, dataset, and progress tracker.
@@ -42,10 +44,12 @@ This is my **personal learning journal** for Data Engineering. I'm documenting e
 Data_Eng/
 ├── 1_Fundamentals/        → broad DE survey
 ├── 2_SQL_Speedrun/        → SQL breadth (notes + flat sql/)
-├── 3_Big_Data_Tools/      → planned
-├── 4_Modern_Data_Stack/   → planned
-├── 5_Production_DE/       → planned
-├── 6_SQL_Deep_Dive/       → planned
+├── 3_Spark_Deep_Dive/     → PySpark, DataFrames, MLlib (notes + notebooks/)
+├── 4_Orchestration/       → Airflow, DAGs, scheduling
+├── 5_Streaming/           → Kafka, event-driven pipelines
+├── 6_Modern_Data_Stack/   → dbt, Snowflake
+├── 7_Production_DE/       → CI/CD, monitoring, security
+├── 8_SQL_Deep_Dive/       → optimization, indexing, MERGE, CDC
 ├── main.py
 ├── pyproject.toml
 └── README.md
@@ -56,10 +60,11 @@ Data_Eng/
 ## 🧠 My Learning Principles
 
 1. **Breadth first, depth later** — speedruns cover the map, deep dives fill it in
-2. **Notes teach, SQL executes** — `.md` files explain; `.sql` files run
+2. **Notes teach, code executes** — `.md` files explain; `.sql`/`.ipynb` files run
 3. **One concept per file** — every lesson is self-contained
 4. **Practice over theory** — run every query, break things, fix them
 5. **Write for future-me** — clear enough to skim a year from now
+6. **Tool modules look different** — some modules are time-boxed, not lesson-by-lesson
 
 ---
 
