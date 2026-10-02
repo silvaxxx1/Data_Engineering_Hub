@@ -156,46 +156,5 @@ finish the speedrun first, then dive deep.
 
 ---
 
-## ✅ Progress Tracker
 
-| # | Lesson | Notes | SQL | Status |
-|:--|:---|:---|:---|:---|
-| 1 | Databases and Setup | ✅ | ✅ | Done |
-| 2 | Database Tree and Objects | — | — | Next |
-| 3 | Create DB and Schema | — | — | — |
-| ... | ... | — | — | — |
-| 24 | Exercises | — | — | — |
 
-I'll update this as I go.
-
----
-
-## 🔗 Related Modules
-
-| Module | Relation |
-|:---|:---|
-| `1_Fundamentals/` | Prerequisite — broad DE concepts |
-| `6_SQL_Deep_Dive/` | Follow-up — depth on optimization, indexing, patterns |
-| `3_Big_Data_Tools/` | Next — Spark, Airflow, Kafka |
-| `4_Modern_Data_Stack/` | Later — dbt, Snowflake, orchestration |
-
----
-
-*This README is the map. The lessons are the territory. Start at 1 and go.*
-```
-
----
-
-## 🧠 Why This README Works
-
-| Section | Purpose |
-|:---|:---|
-| **Framing line** | Sets expectation: breadth, not depth |
-| **Setup** | Points to install tools upfront |
-| **Lesson table** | The full map — you know where you're going |
-| **Organization** | Explains the two-track (`.md` + `sql/`) system |
-| **Dataset** | Introduces the e-commerce DB before Lesson 1 |
-| **Method** | Tells you *how* to consume the module |
-| **What's NOT here** | Prevents scope creep, points to deep dive |
-| **Progress tracker** | Living checklist — you update as you go |
-| **Related modules** | Shows where this fits in the whole repo |
